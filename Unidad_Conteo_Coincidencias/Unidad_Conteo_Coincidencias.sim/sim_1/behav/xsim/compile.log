@@ -1,0 +1,12 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Instrumentacion/Boris FPGA/UCC_21.08.2018/UCC_SING/UCC_SING/Super_uart_derecho.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Super_Uart'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Instrumentacion/Boris FPGA/UCC_21.08.2018/UCC_SING/UCC_SING/UARTReceiver.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'UARTReceiver'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Instrumentacion/Boris FPGA/UCC_21.08.2018/UCC_SING/UCC_SING/UARTTransmitter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'UARTTransmitter'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Instrumentacion/Boris FPGA/Unidad_Conteo_Coincidencias/Unidad_Conteo_Coincidencias.srcs/sources_1/new/counter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'counter'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Instrumentacion/Boris FPGA/Unidad_Conteo_Coincidencias/Unidad_Conteo_Coincidencias.srcs/sources_1/new/time_window.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'time_window'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Instrumentacion/Boris FPGA/UCC_21.08.2018/UCC_SING/UCC_SING/CPU_COINC.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'UCC_SING'

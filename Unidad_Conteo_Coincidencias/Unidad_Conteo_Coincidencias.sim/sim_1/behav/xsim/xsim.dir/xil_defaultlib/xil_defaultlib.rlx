@@ -1,0 +1,10 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+D:/Instrumentacion/Boris FPGA/UCC_21.08.2018/UCC_SING/UCC_SING/CPU_COINC.vhd,1569509606,vhdl,,,,ucc_sing,,,,,,,,
+D:/Instrumentacion/Boris FPGA/UCC_21.08.2018/UCC_SING/UCC_SING/Super_uart_derecho.vhd,1492530342,vhdl,,,,super_uart,,,,,,,,
+D:/Instrumentacion/Boris FPGA/UCC_21.08.2018/UCC_SING/UCC_SING/UARTReceiver.vhd,1488529036,vhdl,,,,uartreceiver,,,,,,,,
+D:/Instrumentacion/Boris FPGA/UCC_21.08.2018/UCC_SING/UCC_SING/UARTTransmitter.vhd,1488529036,vhdl,,,,uarttransmitter,,,,,,,,
+D:/Instrumentacion/Boris FPGA/Unidad_Conteo_Coincidencias/Unidad_Conteo_Coincidencias.srcs/sources_1/new/counter.vhd,1569508520,vhdl,,,,counter,,,,,,,,
+D:/Instrumentacion/Boris FPGA/Unidad_Conteo_Coincidencias/Unidad_Conteo_Coincidencias.srcs/sources_1/new/time_window.vhd,1569489828,vhdl,,,,time_window,,,,,,,,

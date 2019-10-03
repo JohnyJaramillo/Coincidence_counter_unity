@@ -1,0 +1,696 @@
+
+*** Running vivado
+    with args -log UCC_SING.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source UCC_SING.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source UCC_SING.tcl -notrace
+Command: synth_design -top UCC_SING -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 10328 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 381.035 ; gain = 99.688
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'UCC_SING' [D:/Instrumentacion/Boris FPGA/UCC_21.08.2018/UCC_SING/UCC_SING/CPU_COINC.vhd:54]
+	Parameter N_bits bound to: 112 - type: integer 
+	Parameter N_bits bound to: 112 - type: integer 
+INFO: [Synth 8-3491] module 'Super_Uart' declared at 'D:/Instrumentacion/Boris FPGA/UCC_21.08.2018/UCC_SING/UCC_SING/Super_uart_derecho.vhd:18' bound to instance 'SU' of component 'Super_Uart' [D:/Instrumentacion/Boris FPGA/UCC_21.08.2018/UCC_SING/UCC_SING/CPU_COINC.vhd:251]
+INFO: [Synth 8-638] synthesizing module 'Super_Uart' [D:/Instrumentacion/Boris FPGA/UCC_21.08.2018/UCC_SING/UCC_SING/Super_uart_derecho.vhd:37]
+	Parameter N_bits bound to: 112 - type: integer 
+	Parameter baud bound to: 9600 - type: integer 
+INFO: [Synth 8-3491] module 'UARTReceiver' declared at 'D:/Instrumentacion/Boris FPGA/UCC_21.08.2018/UCC_SING/UCC_SING/UARTReceiver.vhd:34' bound to instance 'ur0' of component 'UARTReceiver' [D:/Instrumentacion/Boris FPGA/UCC_21.08.2018/UCC_SING/UCC_SING/Super_uart_derecho.vhd:102]
+INFO: [Synth 8-638] synthesizing module 'UARTReceiver' [D:/Instrumentacion/Boris FPGA/UCC_21.08.2018/UCC_SING/UCC_SING/UARTReceiver.vhd:42]
+	Parameter baud bound to: 9600 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'UARTReceiver' (1#1) [D:/Instrumentacion/Boris FPGA/UCC_21.08.2018/UCC_SING/UCC_SING/UARTReceiver.vhd:42]
+	Parameter baud bound to: 9600 - type: integer 
+INFO: [Synth 8-3491] module 'UARTTransmitter' declared at 'D:/Instrumentacion/Boris FPGA/UCC_21.08.2018/UCC_SING/UCC_SING/UARTTransmitter.vhd:34' bound to instance 'ut0' of component 'UARTTransmitter' [D:/Instrumentacion/Boris FPGA/UCC_21.08.2018/UCC_SING/UCC_SING/Super_uart_derecho.vhd:111]
+INFO: [Synth 8-638] synthesizing module 'UARTTransmitter' [D:/Instrumentacion/Boris FPGA/UCC_21.08.2018/UCC_SING/UCC_SING/UARTTransmitter.vhd:43]
+	Parameter baud bound to: 9600 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'UARTTransmitter' (2#1) [D:/Instrumentacion/Boris FPGA/UCC_21.08.2018/UCC_SING/UCC_SING/UARTTransmitter.vhd:43]
+INFO: [Synth 8-226] default block is never used [D:/Instrumentacion/Boris FPGA/UCC_21.08.2018/UCC_SING/UCC_SING/Super_uart_derecho.vhd:157]
+INFO: [Synth 8-256] done synthesizing module 'Super_Uart' (3#1) [D:/Instrumentacion/Boris FPGA/UCC_21.08.2018/UCC_SING/UCC_SING/Super_uart_derecho.vhd:37]
+INFO: [Synth 8-3491] module 'time_window' declared at 'D:/Instrumentacion/Boris FPGA/Unidad_Conteo_Coincidencias/Unidad_Conteo_Coincidencias.srcs/sources_1/new/time_window.vhd:34' bound to instance 'WT' of component 'time_window' [D:/Instrumentacion/Boris FPGA/UCC_21.08.2018/UCC_SING/UCC_SING/CPU_COINC.vhd:269]
+INFO: [Synth 8-638] synthesizing module 'time_window' [D:/Instrumentacion/Boris FPGA/Unidad_Conteo_Coincidencias/Unidad_Conteo_Coincidencias.srcs/sources_1/new/time_window.vhd:49]
+INFO: [Synth 8-226] default block is never used [D:/Instrumentacion/Boris FPGA/Unidad_Conteo_Coincidencias/Unidad_Conteo_Coincidencias.srcs/sources_1/new/time_window.vhd:68]
+INFO: [Synth 8-256] done synthesizing module 'time_window' (4#1) [D:/Instrumentacion/Boris FPGA/Unidad_Conteo_Coincidencias/Unidad_Conteo_Coincidencias.srcs/sources_1/new/time_window.vhd:49]
+INFO: [Synth 8-3491] module 'counter' declared at 'D:/Instrumentacion/Boris FPGA/Unidad_Conteo_Coincidencias/Unidad_Conteo_Coincidencias.srcs/sources_1/new/counter.vhd:34' bound to instance 'Contador1' of component 'counter' [D:/Instrumentacion/Boris FPGA/UCC_21.08.2018/UCC_SING/UCC_SING/CPU_COINC.vhd:283]
+INFO: [Synth 8-638] synthesizing module 'counter' [D:/Instrumentacion/Boris FPGA/Unidad_Conteo_Coincidencias/Unidad_Conteo_Coincidencias.srcs/sources_1/new/counter.vhd:50]
+INFO: [Synth 8-256] done synthesizing module 'counter' (5#1) [D:/Instrumentacion/Boris FPGA/Unidad_Conteo_Coincidencias/Unidad_Conteo_Coincidencias.srcs/sources_1/new/counter.vhd:50]
+INFO: [Synth 8-3491] module 'counter' declared at 'D:/Instrumentacion/Boris FPGA/Unidad_Conteo_Coincidencias/Unidad_Conteo_Coincidencias.srcs/sources_1/new/counter.vhd:34' bound to instance 'Contador2' of component 'counter' [D:/Instrumentacion/Boris FPGA/UCC_21.08.2018/UCC_SING/UCC_SING/CPU_COINC.vhd:297]
+INFO: [Synth 8-3491] module 'counter' declared at 'D:/Instrumentacion/Boris FPGA/Unidad_Conteo_Coincidencias/Unidad_Conteo_Coincidencias.srcs/sources_1/new/counter.vhd:34' bound to instance 'Contador3' of component 'counter' [D:/Instrumentacion/Boris FPGA/UCC_21.08.2018/UCC_SING/UCC_SING/CPU_COINC.vhd:311]
+INFO: [Synth 8-3491] module 'counter' declared at 'D:/Instrumentacion/Boris FPGA/Unidad_Conteo_Coincidencias/Unidad_Conteo_Coincidencias.srcs/sources_1/new/counter.vhd:34' bound to instance 'Contador4' of component 'counter' [D:/Instrumentacion/Boris FPGA/UCC_21.08.2018/UCC_SING/UCC_SING/CPU_COINC.vhd:325]
+INFO: [Synth 8-3491] module 'counter' declared at 'D:/Instrumentacion/Boris FPGA/Unidad_Conteo_Coincidencias/Unidad_Conteo_Coincidencias.srcs/sources_1/new/counter.vhd:34' bound to instance 'Contador5' of component 'counter' [D:/Instrumentacion/Boris FPGA/UCC_21.08.2018/UCC_SING/UCC_SING/CPU_COINC.vhd:339]
+INFO: [Synth 8-3491] module 'counter' declared at 'D:/Instrumentacion/Boris FPGA/Unidad_Conteo_Coincidencias/Unidad_Conteo_Coincidencias.srcs/sources_1/new/counter.vhd:34' bound to instance 'Contador6' of component 'counter' [D:/Instrumentacion/Boris FPGA/UCC_21.08.2018/UCC_SING/UCC_SING/CPU_COINC.vhd:353]
+INFO: [Synth 8-3491] module 'counter' declared at 'D:/Instrumentacion/Boris FPGA/Unidad_Conteo_Coincidencias/Unidad_Conteo_Coincidencias.srcs/sources_1/new/counter.vhd:34' bound to instance 'Contador7' of component 'counter' [D:/Instrumentacion/Boris FPGA/UCC_21.08.2018/UCC_SING/UCC_SING/CPU_COINC.vhd:367]
+WARNING: [Synth 8-6014] Unused sequential element Do_coun_coin1_reg was removed.  [D:/Instrumentacion/Boris FPGA/UCC_21.08.2018/UCC_SING/UCC_SING/CPU_COINC.vhd:543]
+INFO: [Synth 8-256] done synthesizing module 'UCC_SING' (6#1) [D:/Instrumentacion/Boris FPGA/UCC_21.08.2018/UCC_SING/UCC_SING/CPU_COINC.vhd:54]
+WARNING: [Synth 8-3331] design counter has unconnected port CLK100MHZ
+WARNING: [Synth 8-3331] design UCC_SING has unconnected port signal4
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 437.828 ; gain = 156.480
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 437.828 ; gain = 156.480
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 437.828 ; gain = 156.480
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/Instrumentacion/Boris FPGA/Unidad_Conteo_Coincidencias/Unidad_Conteo_Coincidencias.srcs/constrs_1/new/CPU_COINC.xdc]
+Finished Parsing XDC File [D:/Instrumentacion/Boris FPGA/Unidad_Conteo_Coincidencias/Unidad_Conteo_Coincidencias.srcs/constrs_1/new/CPU_COINC.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Instrumentacion/Boris FPGA/Unidad_Conteo_Coincidencias/Unidad_Conteo_Coincidencias.srcs/constrs_1/new/CPU_COINC.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/UCC_SING_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/UCC_SING_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 796.328 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 796.328 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 796.328 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 796.328 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 796.328 ; gain = 514.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 796.328 ; gain = 514.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 796.328 ; gain = 514.980
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'UARTReceiver'
+INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'est_Super_tx_reg' in module 'Super_Uart'
+INFO: [Synth 8-802] inferred FSM for state register 'est_Super_rx_reg' in module 'Super_Uart'
+INFO: [Synth 8-5544] ROM "data_in" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Done_tx_string" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "est_Super_tx" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Done_rx_string" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "est_Super_rx" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'est_windows_time_reg' in module 'time_window'
+INFO: [Synth 8-5544] ROM "win_on" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "contador_escala" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "contador_tiempo" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Done_windows_time" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "est_windows_time" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "est_windows_time" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "est_UCC_SING" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "escala" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Do_windows_time" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "command_aux" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Do_counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [D:/Instrumentacion/Boris FPGA/UCC_21.08.2018/UCC_SING/UCC_SING/CPU_COINC.vhd:513]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                   ready |                              001 |                               00
+               wait_half |                              010 |                               01
+                    recv |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'UARTReceiver'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                      s0 |                               00 |                               00
+                      s1 |                               01 |                               01
+                      s2 |                               10 |                               10
+                      s3 |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'est_Super_tx_reg' using encoding 'sequential' in module 'Super_Uart'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                      s0 |                              000 |                              000
+                      s1 |                              001 |                              001
+                      s2 |                              010 |                              010
+                      s3 |                              011 |                              011
+                      s4 |                              100 |                              100
+                  iSTATE |                              101 |                              111
+*
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'est_Super_rx_reg' using encoding 'sequential' in module 'Super_Uart'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                      s0 |                               00 |                               00
+                      s1 |                               01 |                               01
+                      s3 |                               10 |                               11
+                      s2 |                               11 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'est_windows_time_reg' using encoding 'sequential' in module 'time_window'
+WARNING: [Synth 8-327] inferring latch for variable 'num_cuentas_reg' [D:/Instrumentacion/Boris FPGA/Unidad_Conteo_Coincidencias/Unidad_Conteo_Coincidencias.srcs/sources_1/new/counter.vhd:61]
+WARNING: [Synth 8-327] inferring latch for variable 'Done_coun_coin_reg' [D:/Instrumentacion/Boris FPGA/Unidad_Conteo_Coincidencias/Unidad_Conteo_Coincidencias.srcs/sources_1/new/counter.vhd:60]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 796.328 ; gain = 514.980
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 6     
+	   2 Input     14 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 4     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	              112 Bit    Registers := 3     
+	               72 Bit    Registers := 1     
+	               32 Bit    Registers := 17    
+	               14 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 3     
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 25    
++---Muxes : 
+	   2 Input    112 Bit        Muxes := 2     
+	   6 Input    112 Bit        Muxes := 1     
+	  43 Input    112 Bit        Muxes := 1     
+	   4 Input     32 Bit        Muxes := 3     
+	   6 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 9     
+	  43 Input     32 Bit        Muxes := 1     
+	  10 Input     32 Bit        Muxes := 1     
+	   2 Input     14 Bit        Muxes := 3     
+	   3 Input     14 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 1     
+	   3 Input      8 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 1     
+	  10 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	  43 Input      3 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 22    
+	   3 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 12    
+	   6 Input      1 Bit        Muxes := 4     
+	  43 Input      1 Bit        Muxes := 14    
+	   5 Input      1 Bit        Muxes := 1     
+	  10 Input      1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module UCC_SING 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 4     
++---Registers : 
+	              112 Bit    Registers := 2     
+	               72 Bit    Registers := 1     
+	               32 Bit    Registers := 13    
+	                6 Bit    Registers := 1     
+	                1 Bit    Registers := 12    
++---Muxes : 
+	  43 Input    112 Bit        Muxes := 1     
+	  43 Input     32 Bit        Muxes := 1     
+	  10 Input     32 Bit        Muxes := 1     
+	  10 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	  43 Input      3 Bit        Muxes := 1     
+	  43 Input      1 Bit        Muxes := 14    
+	   2 Input      1 Bit        Muxes := 7     
+	   5 Input      1 Bit        Muxes := 1     
+	  10 Input      1 Bit        Muxes := 6     
+Module UARTReceiver 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     14 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               14 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     14 Bit        Muxes := 3     
+	   3 Input     14 Bit        Muxes := 1     
+	   3 Input      8 Bit        Muxes := 2     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+	   3 Input      1 Bit        Muxes := 3     
+Module UARTTransmitter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+Module Super_Uart 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 4     
++---Registers : 
+	              112 Bit    Registers := 1     
+	               32 Bit    Registers := 2     
+	                8 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input    112 Bit        Muxes := 2     
+	   6 Input    112 Bit        Muxes := 1     
+	   4 Input     32 Bit        Muxes := 1     
+	   6 Input     32 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 6     
+	   6 Input      1 Bit        Muxes := 4     
+Module time_window 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   4 Input     32 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 6     
+Module counter 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "est_UCC_SING" won't be mapped to RAM because address size (29) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "command_aux" won't be mapped to RAM because address size (29) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "escala" won't be mapped to RAM because address size (29) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Do_windows_time" won't be mapped to RAM because address size (29) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Do_counter" won't be mapped to RAM because address size (29) is larger than maximum supported(25)
+DSP Report: Generating DSP i3, operation Mode is: (A:0xf4240)*B.
+DSP Report: operator i3 is absorbed into DSP i3.
+DSP Report: Generating DSP i0, operation Mode is: PCIN+(A:0x989680)*B.
+DSP Report: operator i0 is absorbed into DSP i0.
+DSP Report: operator i2 is absorbed into DSP i0.
+DSP Report: Generating DSP i1, operation Mode is: (A:0xf5e100)*B.
+DSP Report: operator i1 is absorbed into DSP i1.
+DSP Report: operator i1 is absorbed into DSP i1.
+DSP Report: Generating DSP i0, operation Mode is: PCIN+A:B+C.
+DSP Report: operator i0 is absorbed into DSP i0.
+DSP Report: Generating DSP i4, operation Mode is: (D'+(A:0x3fffffd0))*(B:0x186a0).
+DSP Report: register A is absorbed into DSP i4.
+DSP Report: operator i4 is absorbed into DSP i4.
+DSP Report: operator i5 is absorbed into DSP i4.
+DSP Report: Generating DSP i5, operation Mode is: (D'+(A:0x3fffffd0))*(B:0x2710).
+DSP Report: register A is absorbed into DSP i5.
+DSP Report: operator i5 is absorbed into DSP i5.
+DSP Report: operator i6 is absorbed into DSP i5.
+DSP Report: Generating DSP i0, operation Mode is: PCIN+A:B+C.
+DSP Report: operator i0 is absorbed into DSP i0.
+DSP Report: Generating DSP i6, operation Mode is: (D'+(A:0x3fffffd0))*(B:0x3e8).
+DSP Report: register A is absorbed into DSP i6.
+DSP Report: operator i6 is absorbed into DSP i6.
+DSP Report: operator i7 is absorbed into DSP i6.
+DSP Report: Generating DSP i0, operation Mode is: PCIN+A:B+C.
+DSP Report: operator i0 is absorbed into DSP i0.
+WARNING: [Synth 8-3331] design UCC_SING has unconnected port signal4
+INFO: [Synth 8-3886] merging instance 'Number_reg[16]' (FDE) to 'A[0]'
+INFO: [Synth 8-3886] merging instance 'Number_reg[17]' (FDE) to 'A[1]'
+INFO: [Synth 8-3886] merging instance 'Number_reg[19]' (FDE) to 'A[3]'
+INFO: [Synth 8-3886] merging instance 'Number_reg[18]' (FDE) to 'A[2]'
+INFO: [Synth 8-3886] merging instance 'Number_reg[21]' (FDE) to 'A[5]'
+INFO: [Synth 8-3886] merging instance 'Number_reg[20]' (FDE) to 'A[4]'
+INFO: [Synth 8-3886] merging instance 'Number_reg[22]' (FDE) to 'A[6]'
+INFO: [Synth 8-3886] merging instance 'Number_reg[23]' (FDE) to 'A[7]'
+INFO: [Synth 8-3886] merging instance 'command_aux_reg[31]' (FDE) to 'command_aux_reg[7]'
+INFO: [Synth 8-3886] merging instance 'command_aux_reg[30]' (FDE) to 'command_aux_reg[0]'
+INFO: [Synth 8-3886] merging instance 'command_aux_reg[29]' (FDE) to 'command_aux_reg[7]'
+INFO: [Synth 8-3886] merging instance 'command_aux_reg[28]' (FDE) to 'command_aux_reg[22]'
+INFO: [Synth 8-3886] merging instance 'command_aux_reg[27]' (FDE) to 'command_aux_reg[7]'
+INFO: [Synth 8-3886] merging instance 'command_aux_reg[26]' (FDE) to 'command_aux_reg[0]'
+INFO: [Synth 8-3886] merging instance 'command_aux_reg[25]' (FDE) to 'command_aux_reg[7]'
+INFO: [Synth 8-3886] merging instance 'command_aux_reg[24]' (FDE) to 'command_aux_reg[7]'
+INFO: [Synth 8-3886] merging instance 'command_aux_reg[23]' (FDE) to 'command_aux_reg[7]'
+INFO: [Synth 8-3886] merging instance 'command_aux_reg[21]' (FDE) to 'command_aux_reg[0]'
+INFO: [Synth 8-3886] merging instance 'command_aux_reg[15]' (FDE) to 'command_aux_reg[7]'
+INFO: [Synth 8-3886] merging instance 'command_aux_reg[14]' (FDE) to 'command_aux_reg[10]'
+INFO: [Synth 8-3886] merging instance 'command_aux_reg[12]' (FDE) to 'command_aux_reg[4]'
+INFO: [Synth 8-3886] merging instance 'command_aux_reg[11]' (FDE) to 'command_aux_reg[10]'
+INFO: [Synth 8-3886] merging instance 'command_aux_reg[9]' (FDE) to 'command_aux_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\command_aux_reg[7] )
+INFO: [Synth 8-3886] merging instance 'command_aux_reg[6]' (FDE) to 'command_aux_reg[3]'
+INFO: [Synth 8-3886] merging instance 'command_aux_reg[1]' (FDE) to 'command_aux_reg[0]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\command_aux_reg[0] )
+INFO: [Synth 8-3886] merging instance 'Number_reg[8]' (FDE) to 'A[0]__0'
+INFO: [Synth 8-3886] merging instance 'Number_reg[9]' (FDE) to 'A[1]__0'
+INFO: [Synth 8-3886] merging instance 'Number_reg[10]' (FDE) to 'A[2]__0'
+INFO: [Synth 8-3886] merging instance 'Number_reg[11]' (FDE) to 'A[3]__0'
+INFO: [Synth 8-3886] merging instance 'Number_reg[13]' (FDE) to 'A[5]__0'
+INFO: [Synth 8-3886] merging instance 'Number_reg[12]' (FDE) to 'A[4]__0'
+INFO: [Synth 8-3886] merging instance 'Number_reg[14]' (FDE) to 'A[6]__0'
+INFO: [Synth 8-3886] merging instance 'Number_reg[15]' (FDE) to 'A[7]__0'
+INFO: [Synth 8-3886] merging instance 'Super_string_tx_test_reg[79]' (FDE) to 'Super_string_tx_test_reg[74]'
+INFO: [Synth 8-3886] merging instance 'Super_string_tx_test_reg[78]' (FDE) to 'Super_string_tx_test_reg[74]'
+INFO: [Synth 8-3886] merging instance 'Super_string_tx_test_reg[77]' (FDE) to 'Super_string_tx_test_reg[72]'
+INFO: [Synth 8-3886] merging instance 'Super_string_tx_test_reg[76]' (FDE) to 'Super_string_tx_test_reg[74]'
+INFO: [Synth 8-3886] merging instance 'Super_string_tx_test_reg[75]' (FDE) to 'Super_string_tx_test_reg[74]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Super_string_tx_test_reg[74] )
+INFO: [Synth 8-3886] merging instance 'Super_string_tx_test_reg[73]' (FDE) to 'Super_string_tx_test_reg[72]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\Super_string_tx_test_reg[72] )
+INFO: [Synth 8-3886] merging instance 'Super_string_tx_test_reg[71]' (FDE) to 'Super_string_tx_test_reg[31]'
+INFO: [Synth 8-3886] merging instance 'Super_string_tx_test_reg[70]' (FDE) to 'Super_string_tx_test_reg[31]'
+INFO: [Synth 8-3886] merging instance 'Super_string_tx_test_reg[69]' (FDE) to 'Super_string_tx_test_reg[32]'
+INFO: [Synth 8-3886] merging instance 'Super_string_tx_test_reg[68]' (FDE) to 'Super_string_tx_test_reg[32]'
+INFO: [Synth 8-3886] merging instance 'Super_string_tx_test_reg[67]' (FDE) to 'Super_string_tx_test_reg[32]'
+INFO: [Synth 8-3886] merging instance 'Super_string_tx_test_reg[66]' (FDE) to 'Super_string_tx_test_reg[31]'
+INFO: [Synth 8-3886] merging instance 'Super_string_tx_test_reg[65]' (FDE) to 'Super_string_tx_test_reg[31]'
+INFO: [Synth 8-3886] merging instance 'Super_string_tx_test_reg[64]' (FDE) to 'Super_string_tx_test_reg[32]'
+INFO: [Synth 8-3886] merging instance 'Super_string_tx_test_reg[63]' (FDE) to 'Super_string_tx_test_reg[31]'
+INFO: [Synth 8-3886] merging instance 'Super_string_tx_test_reg[62]' (FDE) to 'Super_string_tx_test_reg[31]'
+INFO: [Synth 8-3886] merging instance 'Super_string_tx_test_reg[61]' (FDE) to 'Super_string_tx_test_reg[32]'
+INFO: [Synth 8-3886] merging instance 'Super_string_tx_test_reg[60]' (FDE) to 'Super_string_tx_test_reg[32]'
+INFO: [Synth 8-3886] merging instance 'Super_string_tx_test_reg[59]' (FDE) to 'Super_string_tx_test_reg[32]'
+INFO: [Synth 8-3886] merging instance 'Super_string_tx_test_reg[58]' (FDE) to 'Super_string_tx_test_reg[31]'
+INFO: [Synth 8-3886] merging instance 'Super_string_tx_test_reg[57]' (FDE) to 'Super_string_tx_test_reg[31]'
+INFO: [Synth 8-3886] merging instance 'Super_string_tx_test_reg[56]' (FDE) to 'Super_string_tx_test_reg[32]'
+INFO: [Synth 8-3886] merging instance 'Super_string_tx_test_reg[55]' (FDE) to 'Super_string_tx_test_reg[31]'
+INFO: [Synth 8-3886] merging instance 'Super_string_tx_test_reg[54]' (FDE) to 'Super_string_tx_test_reg[31]'
+INFO: [Synth 8-3886] merging instance 'Super_string_tx_test_reg[53]' (FDE) to 'Super_string_tx_test_reg[32]'
+INFO: [Synth 8-3886] merging instance 'Super_string_tx_test_reg[52]' (FDE) to 'Super_string_tx_test_reg[32]'
+INFO: [Synth 8-3886] merging instance 'Super_string_tx_test_reg[51]' (FDE) to 'Super_string_tx_test_reg[32]'
+INFO: [Synth 8-3886] merging instance 'Super_string_tx_test_reg[50]' (FDE) to 'Super_string_tx_test_reg[31]'
+INFO: [Synth 8-3886] merging instance 'Super_string_tx_test_reg[49]' (FDE) to 'Super_string_tx_test_reg[31]'
+INFO: [Synth 8-3886] merging instance 'Super_string_tx_test_reg[48]' (FDE) to 'Super_string_tx_test_reg[32]'
+INFO: [Synth 8-3886] merging instance 'Super_string_tx_test_reg[47]' (FDE) to 'Super_string_tx_test_reg[31]'
+INFO: [Synth 8-3886] merging instance 'Super_string_tx_test_reg[46]' (FDE) to 'Super_string_tx_test_reg[31]'
+INFO: [Synth 8-3886] merging instance 'Super_string_tx_test_reg[45]' (FDE) to 'Super_string_tx_test_reg[32]'
+INFO: [Synth 8-3886] merging instance 'Super_string_tx_test_reg[44]' (FDE) to 'Super_string_tx_test_reg[32]'
+INFO: [Synth 8-3886] merging instance 'Super_string_tx_test_reg[43]' (FDE) to 'Super_string_tx_test_reg[32]'
+INFO: [Synth 8-3886] merging instance 'Super_string_tx_test_reg[42]' (FDE) to 'Super_string_tx_test_reg[31]'
+INFO: [Synth 8-3886] merging instance 'Super_string_tx_test_reg[41]' (FDE) to 'Super_string_tx_test_reg[31]'
+INFO: [Synth 8-3886] merging instance 'Super_string_tx_test_reg[40]' (FDE) to 'Super_string_tx_test_reg[32]'
+INFO: [Synth 8-3886] merging instance 'Super_string_tx_test_reg[39]' (FDE) to 'Super_string_tx_test_reg[31]'
+INFO: [Synth 8-3886] merging instance 'Super_string_tx_test_reg[38]' (FDE) to 'Super_string_tx_test_reg[31]'
+INFO: [Synth 8-3886] merging instance 'Super_string_tx_test_reg[37]' (FDE) to 'Super_string_tx_test_reg[32]'
+INFO: [Synth 8-3886] merging instance 'Super_string_tx_test_reg[36]' (FDE) to 'Super_string_tx_test_reg[32]'
+INFO: [Synth 8-3886] merging instance 'Super_string_tx_test_reg[35]' (FDE) to 'Super_string_tx_test_reg[32]'
+INFO: [Synth 8-3886] merging instance 'Super_string_tx_test_reg[34]' (FDE) to 'Super_string_tx_test_reg[31]'
+INFO: [Synth 8-3886] merging instance 'Super_string_tx_test_reg[33]' (FDE) to 'Super_string_tx_test_reg[31]'
+INFO: [Synth 8-3886] merging instance 'Super_string_tx_reg[79]' (FDE) to 'Super_string_tx_reg[74]'
+INFO: [Synth 8-3886] merging instance 'Super_string_tx_reg[78]' (FDE) to 'Super_string_tx_reg[74]'
+INFO: [Synth 8-3886] merging instance 'Super_string_tx_reg[77]' (FDE) to 'Super_string_tx_reg[72]'
+INFO: [Synth 8-3886] merging instance 'Super_string_tx_reg[76]' (FDE) to 'Super_string_tx_reg[74]'
+INFO: [Synth 8-3886] merging instance 'Super_string_tx_reg[75]' (FDE) to 'Super_string_tx_reg[74]'
+INFO: [Synth 8-3886] merging instance 'Super_string_tx_reg[73]' (FDE) to 'Super_string_tx_reg[72]'
+INFO: [Synth 8-3886] merging instance 'Super_string_tx_reg[71]' (FDE) to 'Super_string_tx_reg[31]'
+INFO: [Synth 8-3886] merging instance 'Super_string_tx_reg[70]' (FDE) to 'Super_string_tx_reg[31]'
+INFO: [Synth 8-3886] merging instance 'Super_string_tx_reg[69]' (FDE) to 'Super_string_tx_reg[32]'
+INFO: [Synth 8-3886] merging instance 'Super_string_tx_reg[68]' (FDE) to 'Super_string_tx_reg[32]'
+INFO: [Synth 8-3886] merging instance 'Super_string_tx_reg[67]' (FDE) to 'Super_string_tx_reg[32]'
+INFO: [Synth 8-3886] merging instance 'Super_string_tx_reg[66]' (FDE) to 'Super_string_tx_reg[31]'
+INFO: [Synth 8-3886] merging instance 'Super_string_tx_reg[65]' (FDE) to 'Super_string_tx_reg[31]'
+INFO: [Synth 8-3886] merging instance 'Super_string_tx_reg[64]' (FDE) to 'Super_string_tx_reg[32]'
+INFO: [Synth 8-3886] merging instance 'Super_string_tx_reg[63]' (FDE) to 'Super_string_tx_reg[31]'
+INFO: [Synth 8-3886] merging instance 'Super_string_tx_reg[62]' (FDE) to 'Super_string_tx_reg[31]'
+INFO: [Synth 8-3886] merging instance 'Super_string_tx_reg[61]' (FDE) to 'Super_string_tx_reg[32]'
+INFO: [Synth 8-3886] merging instance 'Super_string_tx_reg[60]' (FDE) to 'Super_string_tx_reg[32]'
+INFO: [Synth 8-3886] merging instance 'Super_string_tx_reg[59]' (FDE) to 'Super_string_tx_reg[32]'
+INFO: [Synth 8-3886] merging instance 'Super_string_tx_reg[58]' (FDE) to 'Super_string_tx_reg[31]'
+INFO: [Synth 8-3886] merging instance 'Super_string_tx_reg[57]' (FDE) to 'Super_string_tx_reg[31]'
+INFO: [Synth 8-3886] merging instance 'Super_string_tx_reg[56]' (FDE) to 'Super_string_tx_reg[32]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\escala_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\SU/ut0/data_packet_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Super_string_tx_test_reg[87] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\Super_string_tx_test_reg[80] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Super_string_tx_reg[74] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\Super_string_tx_reg[72] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 796.328 ; gain = 514.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------+----------------------+---------------+----------------+
+|Module Name | RTL Object           | Depth x Width | Implemented As | 
++------------+----------------------+---------------+----------------+
+|UCC_SING    | Super_string_tx_test | 64x1          | LUT            | 
+|UCC_SING    | Super_string_tx_test | 64x1          | LUT            | 
++------------+----------------------+---------------+----------------+
+
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+---------------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping                     | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+---------------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|UCC_SING    | (A:0xf4240)*B                   | 21     | 9      | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|UCC_SING    | PCIN+(A:0x989680)*B             | 25     | 9      | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|UCC_SING    | (A:0xf5e100)*B                  | 25     | 9      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|UCC_SING    | PCIN+A:B+C                      | 14     | 18     | 48     | -      | -1     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|UCC_SING    | (D'+(A:0x3fffffd0))*(B:0x186a0) | 7      | 18     | -      | 8      | 27     | 0    | 0    | -    | 1    | 0     | 0    | 0    | 
+|UCC_SING    | (D'+(A:0x3fffffd0))*(B:0x2710)  | 7      | 15     | -      | 8      | 24     | 0    | 0    | -    | 1    | 0     | 0    | 0    | 
+|UCC_SING    | PCIN+A:B+C                      | 6      | 18     | 27     | -      | -1     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|UCC_SING    | (D'+(A:0x3fffffd0))*(B:0x3e8)   | 7      | 11     | -      | 8      | 20     | 0    | 0    | -    | 1    | 0     | 0    | 0    | 
+|UCC_SING    | PCIN+A:B+C                      | 2      | 18     | 48     | -      | -1     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
++------------+---------------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 846.133 ; gain = 564.785
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 848.188 ; gain = 566.840
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 878.949 ; gain = 597.602
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 878.949 ; gain = 597.602
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 878.949 ; gain = 597.602
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 878.949 ; gain = 597.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 878.949 ; gain = 597.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 878.949 ; gain = 597.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 878.949 ; gain = 597.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |BUFG      |     9|
+|2     |CARRY4    |   142|
+|3     |DSP48E1   |     3|
+|4     |DSP48E1_1 |     3|
+|5     |DSP48E1_2 |     3|
+|6     |LUT1      |   115|
+|7     |LUT2      |   175|
+|8     |LUT3      |   303|
+|9     |LUT4      |   140|
+|10    |LUT5      |   174|
+|11    |LUT6      |   331|
+|12    |MUXF7     |    54|
+|13    |MUXF8     |     6|
+|14    |FDCE      |    13|
+|15    |FDRE      |  1039|
+|16    |FDSE      |    36|
+|17    |LD        |   224|
+|18    |LDP       |     1|
+|19    |IBUF      |     7|
+|20    |OBUF      |     3|
++------+----------+------+
+
+Report Instance Areas: 
++------+------------+----------------+------+
+|      |Instance    |Module          |Cells |
++------+------------+----------------+------+
+|1     |top         |                |  2781|
+|2     |  Contador1 |counter         |   137|
+|3     |  Contador2 |counter_0       |    74|
+|4     |  Contador3 |counter_1       |    73|
+|5     |  Contador4 |counter_2       |    73|
+|6     |  Contador5 |counter_3       |    73|
+|7     |  Contador6 |counter_4       |    73|
+|8     |  Contador7 |counter_5       |    73|
+|9     |  SU        |Super_Uart      |   860|
+|10    |    ur0     |UARTReceiver    |    73|
+|11    |    ut0     |UARTTransmitter |    65|
+|12    |  WT        |time_window     |   407|
++------+------------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 878.949 ; gain = 597.602
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 3 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:25 ; elapsed = 00:00:31 . Memory (MB): peak = 878.949 ; gain = 239.102
+Synthesis Optimization Complete : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 878.949 ; gain = 597.602
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 436 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 878.949 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 225 instances were transformed.
+  LD => LDCE: 224 instances
+  LDP => LDPE: 1 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+180 Infos, 6 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 878.949 ; gain = 609.852
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 878.949 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/Instrumentacion/Boris FPGA/Unidad_Conteo_Coincidencias/Unidad_Conteo_Coincidencias.runs/synth_1/UCC_SING.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file UCC_SING_utilization_synth.rpt -pb UCC_SING_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Sep 26 17:26:28 2019...

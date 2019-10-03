@@ -1,0 +1,109 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Thu Sep 26 17:27:07 2019
+| Host         : DESKTOP-IRKI049 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file UCC_SING_control_sets_placed.rpt
+| Design       : UCC_SING
+| Device       : xc7a100t
+-------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    36 |
+| Unused register locations in slices containing registers |    71 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      1 |            3 |
+|      4 |            1 |
+|      6 |            1 |
+|      7 |            2 |
+|      8 |            4 |
+|      9 |            1 |
+|     10 |            1 |
+|     13 |            2 |
+|     14 |            1 |
+|    16+ |           20 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             363 |          120 |
+| No           | No                    | Yes                    |               7 |            4 |
+| No           | Yes                   | No                     |              29 |           10 |
+| Yes          | No                    | No                     |             691 |          189 |
+| Yes          | No                    | Yes                    |               6 |            5 |
+| Yes          | Yes                   | No                     |             217 |           54 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------------+--------------------------------+----------------------------------+------------------+----------------+
+|     Clock Signal     |          Enable Signal         |         Set/Reset Signal         | Slice Load Count | Bel Load Count |
++----------------------+--------------------------------+----------------------------------+------------------+----------------+
+|  CLK100MHZ_IBUF_BUFG | Done_UCC_SING0                 |                                  |                1 |              1 |
+|  CLK100MHZ_IBUF_BUFG |                                | SU/ut0/data_packet               |                1 |              1 |
+|  WT/win_on_reg_0     |                                | WT/Done_coun_coin0               |                1 |              1 |
+|  CLK100MHZ_IBUF_BUFG | SU/ut0/bit_cnt[3]_i_1_n_1      | SU/ut0/data_packet               |                2 |              4 |
+|  CLK100MHZ_IBUF_BUFG | SU/E[0]                        | rst_IBUF                         |                5 |              6 |
+|  CLK100MHZ_IBUF_BUFG |                                | rst_IBUF                         |                4 |              7 |
+|  CLK100MHZ_IBUF_BUFG | p_0_in                         |                                  |                2 |              7 |
+|  CLK100MHZ_IBUF_BUFG | SU/ut0/data_packet             | SU/ut0/data_packet[8]_i_1_n_1    |                4 |              8 |
+|  CLK100MHZ_IBUF_BUFG | Super_string_tx_test0          | Super_string_tx_test[99]_i_1_n_1 |                1 |              8 |
+|  CLK100MHZ_IBUF_BUFG | SU/data_in[6]_i_2_n_1          | SU/data_in[6]_i_1_n_1            |                3 |              8 |
+|  CLK100MHZ_IBUF_BUFG | SU/ur0/E[0]                    |                                  |                2 |              8 |
+|  CLK100MHZ_IBUF_BUFG | escala0                        |                                  |                2 |              9 |
+|  CLK100MHZ_IBUF_BUFG | Super_string_tx_test0          |                                  |                4 |             10 |
+|  CLK100MHZ_IBUF_BUFG |                                | SU/ur0/clk_cnt[13]_i_1_n_1       |                4 |             13 |
+|  CLK100MHZ_IBUF_BUFG | command_aux0                   |                                  |                4 |             13 |
+|  CLK100MHZ_IBUF_BUFG |                                | SU/ut0/clk_cnt[0]_i_1__0_n_1     |                4 |             14 |
+|  CLK100MHZ_IBUF_BUFG | SU/count_bits_tx[31]_i_2_n_1   | SU/count_bits_tx[31]_i_1_n_1     |                8 |             30 |
+|  CLK100MHZ_IBUF_BUFG | SU/count_bits_rx0              | SU/count_bits_rx[31]_i_1_n_1     |                8 |             30 |
+|  D_s_13_BUFG         | WT/sel                         |                                  |                8 |             32 |
+|  CLK100MHZ_IBUF_BUFG | WT/contador_tiempo[31]_i_2_n_1 | WT/contador_tiempo[31]_i_1_n_1   |                9 |             32 |
+|  CLK100MHZ_IBUF_BUFG | WT/win_on0                     | WT/contador_escala[31]_i_1_n_1   |                9 |             32 |
+|  D_s_23_BUFG         | WT/sel                         |                                  |                8 |             32 |
+|  D_s_3_BUFG          | WT/sel                         |                                  |                8 |             32 |
+|  CLK100MHZ_IBUF_BUFG | escala0                        | ciclos_tiempo[31]_i_1_n_1        |                5 |             32 |
+|  CLK100MHZ_IBUF_BUFG | i0__3                          |                                  |                9 |             32 |
+|  D_s_2_BUFG          | WT/sel                         |                                  |                8 |             32 |
+|  D_s_1_BUFG          | WT/sel                         |                                  |                8 |             32 |
+|  D_s_12_BUFG         | WT/sel                         |                                  |                8 |             32 |
+|  D_s_123_BUFG        | WT/sel                         |                                  |                8 |             32 |
+|  CLK100MHZ_IBUF_BUFG | WT/E[0]                        |                                  |               20 |             32 |
+|  CLK100MHZ_IBUF_BUFG | Super_string_tx_test0          | Super_string_tx_test[31]_i_1_n_1 |                5 |             33 |
+|  CLK100MHZ_IBUF_BUFG | Super_string_tx[108]_i_1_n_1   |                                  |               13 |             51 |
+|  CLK100MHZ_IBUF_BUFG | Comand0                        |                                  |               28 |             80 |
+|  CLK100MHZ_IBUF_BUFG |                                |                                  |               55 |            139 |
+|  CLK100MHZ_IBUF_BUFG | WT/Comand_reg[22][0]           |                                  |               48 |            224 |
+|  n_0_1346_BUFG       |                                |                                  |               65 |            224 |
++----------------------+--------------------------------+----------------------------------+------------------+----------------+
+
+

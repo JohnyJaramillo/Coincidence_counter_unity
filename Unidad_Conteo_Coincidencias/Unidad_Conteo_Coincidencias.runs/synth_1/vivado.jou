@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Sep 26 17:25:45 2019
+# Process ID: 6676
+# Current directory: D:/Instrumentacion/Boris FPGA/Unidad_Conteo_Coincidencias/Unidad_Conteo_Coincidencias.runs/synth_1
+# Command line: vivado.exe -log UCC_SING.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source UCC_SING.tcl
+# Log file: D:/Instrumentacion/Boris FPGA/Unidad_Conteo_Coincidencias/Unidad_Conteo_Coincidencias.runs/synth_1/UCC_SING.vds
+# Journal file: D:/Instrumentacion/Boris FPGA/Unidad_Conteo_Coincidencias/Unidad_Conteo_Coincidencias.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source UCC_SING.tcl -notrace

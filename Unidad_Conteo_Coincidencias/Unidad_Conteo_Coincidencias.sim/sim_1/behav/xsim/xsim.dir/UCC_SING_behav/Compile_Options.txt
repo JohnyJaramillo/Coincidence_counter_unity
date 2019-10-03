@@ -1,0 +1,1 @@
+-wto "5b602c23f8d2462981ab21179133e311" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "UCC_SING_behav" "xil_defaultlib.UCC_SING" -log "elaborate.log" 

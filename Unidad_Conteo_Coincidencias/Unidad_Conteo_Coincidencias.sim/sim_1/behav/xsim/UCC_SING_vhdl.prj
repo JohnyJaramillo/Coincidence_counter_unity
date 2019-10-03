@@ -1,0 +1,11 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../UCC_21.08.2018/UCC_SING/UCC_SING/Super_uart_derecho.vhd" \
+"../../../../../UCC_21.08.2018/UCC_SING/UCC_SING/UARTReceiver.vhd" \
+"../../../../../UCC_21.08.2018/UCC_SING/UCC_SING/UARTTransmitter.vhd" \
+"../../../../Unidad_Conteo_Coincidencias.srcs/sources_1/new/counter.vhd" \
+"../../../../Unidad_Conteo_Coincidencias.srcs/sources_1/new/time_window.vhd" \
+"../../../../../UCC_21.08.2018/UCC_SING/UCC_SING/CPU_COINC.vhd" \
+
+# Do not sort compile order
+nosort
